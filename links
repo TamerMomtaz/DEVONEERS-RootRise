@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devoneers – RootRise Competitive Landscape Portal</title>
+
+  <style>
+    /* ============================
+       ROOTRISE / DEVONEERS PALETTE
+       ============================ */
+    :root {
+      /* Brand Colors (Logo) */
+      --brand-gold: #E1A549;
+      --brand-blue-dark: #132938;
+      --brand-blue-medium: #23445B;
+      --brand-blue-light: #2D5068;
+
+      /* Interface Colors */
+      --ui-dark: #18243D;
+      --ui-card-bg: #213552;
+      --ui-text-primary: #FFFFFF;
+      --ui-text-secondary: #9CA6BA;
+      --ui-icon-gold: #B3A068;
+      --ui-icon-gray: #5F6A73;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ui-text-primary);
+
+      /* RootRise background image */
+      background-image:
+        linear-gradient(
+          135deg,
+          rgba(19, 41, 56, 0.90),
+          rgba(24, 36, 61, 0.92)
+        ),
+        url("rootrise-bg.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 1080px;
+      background: rgba(33, 53, 82, 0.88);
+      border-radius: 24px;
+      border: 1px solid rgba(225, 165, 73, 0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+      padding: 28px 22px 30px;
+      backdrop-filter: blur(8px);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      margin-bottom: 6px;
+    }
+
+    header h2 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ui-text-secondary);
+      margin-bottom: 4px;
+    }
+
+    header p {
+      font-size: 13px;
+      color: var(--ui-text-secondary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .doc-card {
+      background: rgba(24, 36, 61, 0.94);
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      padding: 16px 12px 14px;
+      text-align: center;
+      transition: transform 0.18s ease, box-shadow 0.18s ease,
+                  border-color 0.18s ease, background 0.18s ease;
+    }
+
+    .doc-card a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .doc-card img {
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+      border-radius: 20px;
+      background: radial-gradient(circle at 30% 0,
+                  rgba(225, 165, 73, 0.3),
+                  rgba(19, 41, 56, 0.95));
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6);
+      transition: transform 0.18s ease, box-shadow 0.18s ease,
+                  border 0.18s ease;
+      border: 1px solid rgba(225, 165, 73, 0.5);
+    }
+
+    .doc-card-title {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--ui-text-primary);
+    }
+
+    .doc-card-caption {
+      font-size: 11px;
+      color: var(--ui-text-secondary);
+    }
+
+    .doc-card:hover {
+      transform: translateY(-4px);
+      background: radial-gradient(circle at 10% -10%,
+                    rgba(225, 165, 73, 0.18),
+                    rgba(24, 36, 61, 0.98));
+      border-color: var(--brand-gold);
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.75);
+    }
+
+    .doc-card:hover img {
+      transform: scale(1.06);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.8);
+      border-color: var(--brand-gold);
+    }
+
+    footer {
+      margin-top: 22px;
+      font-size: 11px;
+      text-align: center;
+      color: var(--ui-text-secondary);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
+      .shell {
+        padding: 18px 14px 20px;
+      }
+      header h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <header>
+      <h1>DEVONEERS</h1>
+      <h2>RootRise Competitive Landscape Portal</h2>
+      <p>Click any Devoneers emblem to open the corresponding deep-dive document in a new tab.</p>
+    </header>
+
+    <section class="grid">
+
+      <!-- Card 1 -->
+      <div class="doc-card">
+        <a href="https://tamermomtaz.github.io/Strategic-Market-Analysis-Comprehensive-RootRise-Competitive-Landscape/" target="_blank" rel="noopener">
+          <img src="devoneers-logo.png" alt="Devoneers – Strategic Market Analysis" />
+          <div class="doc-card-title">
+            Strategic Market Analysis:<br>
+            RootRise & Competitive Landscape
+          </div>
+          <div class="doc-card-caption">
+            Full narrative of the SME investment-readiness ecosystem.
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="doc-card">
+        <a href="https://tamermomtaz.github.io/RootRise-Competitive-Analysis---Pitch-Deck-Slide-Design/" target="_blank" rel="noopener">
+          <img src="devoneers-logo.png" alt="Devoneers – Competitive Analysis Slide Design" />
+          <div class="doc-card-title">
+            RootRise Competitive Analysis –<br>
+            Pitch-Deck Slide Design
+          </div>
+          <div class="doc-card-caption">
+            Clean slide-ready visuals for investor presentations.
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="doc-card">
+        <a href="https://tamermomtaz.github.io/Appendix-A-Detailed-Competitor-Profiles/" target="_blank" rel="noopener">
+          <img src="devoneers-logo.png" alt="Devoneers – Appendix A Competitor Profiles" />
+          <div class="doc-card-title">
+            Appendix A – Detailed<br>
+            Competitor Profiles
+          </div>
+          <div class="doc-card-caption">
+            Deep profiles of all mapped platforms and consultancies.
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="doc-card">
+        <a href="https://tamermomtaz.github.io/Appendix-B-Market-Sizing-Methodology/" target="_blank" rel="noopener">
+          <img src="devoneers-logo.png" alt="Devoneers – Appendix B Market Sizing" />
+          <div class="doc-card-title">
+            Appendix B – Market<br>
+            Sizing Methodology
+          </div>
+          <div class="doc-card-caption">
+            Assumptions, data sources, and calculation logic.
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="doc-card">
+        <a href="https://tamermomtaz.github.io/Appendix_C_Financial_Model_Comparisons/" target="_blank" rel="noopener">
+          <img src="devoneers-logo.png" alt="Devoneers – Appendix C Financial Models" />
+          <div class="doc-card-title">
+            Appendix C – Financial<br>
+            Model Comparisons
+          </div>
+          <div class="doc-card-caption">
+            Revenue, pricing, and unit-economics benchmarks.
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2025 Devoneers / RootRise — Central companion page for pitch decks and investor Q&amp;A.
+    </footer>
+  </div>
+</body>
+</html>
